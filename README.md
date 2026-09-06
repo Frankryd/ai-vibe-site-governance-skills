@@ -4,6 +4,11 @@
 
 > **先证明跑得通，再证明长得好，最后证明跳得对。**
 
+> A methodology toolkit of agent skills for websites built by multi-round AI iteration.
+> Four skills, three layers, one through-line: **prove it runs, then prove it looks right, then prove it navigates correctly.**
+
+> Chinese is the primary language. Each skill also ships an English twin, see [Language notes](#语言说明bilingual).
+
 ## 核心理念
 
 1. **标准先行** —— 先建判据（红线/优化分级）再动手，标准未成型不动代码
@@ -40,7 +45,7 @@ git clone https://github.com/Frankryd/ai-vibe-skills && cd ai-vibe-skills
 `visual-verify` 依赖任意**支持图像输入的 LLM API**（OpenAI 兼容 `/chat/completions` 即可，不限厂商）：
 
 ```bash
-export VISION_API_KEY=***
+export VISION_API_KEY="***"
 export VISION_BASE_URL=https://api.openai.com/v1   # 可选，任何兼容网关
 export VISION_MODEL=gpt-4o                          # 可选，需支持图像输入
 ```
@@ -66,16 +71,27 @@ node skills/visual-verify/scripts/analyze-image.js \
 
 ```
 skills/
-├─ site-check/SKILL.md
+├─ site-check/SKILL.md (+ SKILL.en.md)
 ├─ ai-vibe-governance/
-│  ├─ SKILL.md
+│  ├─ SKILL.md (+ SKILL.en.md)
 │  ├─ reference/           # 扫描清单、6维度SOP、修复模式、报告模板、工作流
 │  └─ scripts/smoke-template.js
 ├─ visual-verify/
-│  ├─ SKILL.md
+│  ├─ SKILL.md (+ SKILL.en.md)
 │  └─ scripts/analyze-image.js
-└─ route-governance/SKILL.md
+└─ route-governance/SKILL.md (+ SKILL.en.md)
 ```
+
+## 语言说明（Bilingual）
+
+每个 skill 有**两份文件**：
+
+- `SKILL.md` —— **中文版，是权威加载入口**。工具读取的是它。修改 skill 时改这个文件。
+- `SKILL.en.md` —— **英文版，供英文读者阅读与传播**。frontmatter 与中文版保持一致（name / version / license / argument-hint / allowed-tools），正文章节一一对应。
+
+两份文件的正文独立维护，不自动同步——更新 skill 时请记得两份都改，否则中英会漂移。
+
+> `route-governance` 里内嵌的 `scan-routes.js` 脚本在两份文件中**完全相同**（含中文注释），因为那是可执行代码，翻译会破坏它。
 
 ## 使用约定（重要）
 

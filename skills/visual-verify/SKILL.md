@@ -1,14 +1,15 @@
 ---
 name: visual-verify
 description: >-
-  Use when a UI/visual change needs to be verified against expected rendering — after
-  editing pages, components, PDFs, charts, cards, or responsive layouts; or when the
+  Use when a UI or visual change needs to be verified against expected rendering, after
+  editing pages, components, PDFs, charts, cards, or responsive layouts, or when the
   user reports something "looks off / 不对劲 / 效果不对" but cannot describe the
-  technical detail. Provides the visual-verification workflow: capture screenshots
-  (desktop/mobile/full-page) with Playwright, then inspect them with a vision-capable
-  model against a written "expected effect" baseline. Pair with functional
-  verification (DOM assertions) — visual checks confirm how it renders, not just that
-  it runs. Not for backend-only or pure-logic changes that have no visible surface.
+  technical detail. Provides the visual-verification workflow, which captures
+  screenshots (desktop, mobile, full-page) with Playwright and inspects them with a
+  vision-capable model against a written "expected effect" baseline. Pair with
+  functional verification via DOM assertions, since visual checks confirm how it
+  renders rather than only that it runs. Not for backend-only or pure-logic changes
+  that have no visible surface.
 version: 1.0.0
 user-invocable: true
 argument-hint: "[target url|file] [expected effect]"
