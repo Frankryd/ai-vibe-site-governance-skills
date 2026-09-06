@@ -7,6 +7,9 @@ skills/visual-verify/scripts/.env
 audit/screenshots/
 *.png
 *.jpg
+# 例外：仓库自己的文档配图要入库
+!docs/*.png
+!docs/*.jpg
 
 # 依赖与系统文件
 node_modules/
