@@ -1,0 +1,14 @@
+# 本地密钥与临时产物
+.env
+skills/visual-verify/scripts/.env
+*.env.local
+
+# 截图与审计产物（按项目生成，不入包）
+audit/screenshots/
+*.png
+*.jpg
+
+# 依赖与系统文件
+node_modules/
+.DS_Store
+*.log
