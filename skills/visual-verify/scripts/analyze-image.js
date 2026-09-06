@@ -43,7 +43,7 @@ const MODEL = process.env.VISION_MODEL || 'gpt-4o';
 
 if (!KEY) {
   console.error('[analyze-image] 缺少 VISION_API_KEY。');
-  console.error('  export VISION_API_KEY=***    # 或写入本目录 .env');
+  console.error('  export VISION_API_KEY="your-key-here"    # 或写入本目录 .env')
   console.error('  export VISION_BASE_URL=...   # 可选，任何兼容 /chat/completions 的网关');
   console.error('  export VISION_MODEL=...      # 可选，需支持图像输入');
   process.exit(2);

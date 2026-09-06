@@ -45,7 +45,7 @@ git clone https://github.com/Frankryd/ai-vibe-skills && cd ai-vibe-skills
 `visual-verify` 依赖任意**支持图像输入的 LLM API**（OpenAI 兼容 `/chat/completions` 即可，不限厂商）：
 
 ```bash
-export VISION_API_KEY="***"
+export VISION_API_KEY="your-key-here"
 export VISION_BASE_URL=https://api.openai.com/v1   # 可选，任何兼容网关
 export VISION_MODEL=gpt-4o                          # 可选，需支持图像输入
 ```
