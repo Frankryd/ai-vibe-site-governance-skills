@@ -156,11 +156,11 @@ The bodies are maintained independently and are not synced automatically. Rememb
 
 > The `scan-routes.js` script embedded in `route-governance` is **byte-identical** in both files (including its Chinese comments), because it is executable code — translating it would break it.
 
-## Conventions (important)
+## Skill-specific usage conventions (important)
 
-- **No unilateral action** — every write/modify/delete is confirmed by the human first
+- **No unilateral action** — every write/modify/delete is confirmed by the user first
 - **No scope escalation** — a single-page visual issue does not get promoted to a full-site governance run, and vice versa
-- **The golden baseline table for route governance is human-confirmed** — script output is only a snapshot of the current state, not the truth
+- **The golden baseline table for route governance is user-confirmed** — script output is only a snapshot of the current state, not the truth
 
 ## License
 
