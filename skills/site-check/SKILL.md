@@ -1,6 +1,13 @@
 ---
 name: site-check
-description: Use as the single entry point for any website self-check / audit request — when the user says "自检 / 体检 / 看看这页对不对 / 这里不对劲 / 看起来怪 / 给全站检查一下" without specifying the exact layer. This skill routes to the right sub-skill: visual-verify for rendering/layout issues on a single page, ai-vibe-governance for behavioral/systemic issues across the site, or both for a full-site check. It is a dispatcher only — it does not re-implement the sub-skills' logic. Not for greenfield feature work.
+description: >-
+  Use as the single entry point for any website self-check / audit request — when the
+  user says "自检 / 体检 / 看看这页对不对 / 这里不对劲 / 看起来怪 / 给全站检查一下"
+  without specifying the exact layer. This skill routes to the right sub-skill:
+  visual-verify for rendering/layout issues on a single page, ai-vibe-governance for
+  behavioral/systemic issues across the site, or both for a full-site check. It is a
+  dispatcher only — it does not re-implement the sub-skills' logic. Not for greenfield
+  feature work.
 version: 1.0.0
 user-invocable: true
 argument-hint: "[page url|file | full-site | what feels off]"

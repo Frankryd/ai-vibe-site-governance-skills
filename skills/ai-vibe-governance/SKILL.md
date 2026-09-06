@@ -1,6 +1,15 @@
 ---
 name: ai-vibe-governance
-description: Use when a site/project was built by AI multi-round iteration (vibe-coded) and needs a systematic audit + remediation — when the user reports things "feel off / 不对劲" but can't describe technical details, or wants to harden an AI-generated codebase against its characteristic failure modes (fragmented code, duplicated logic, schema drift, dead code, silent errors, state loss, security vectors). Provides the full governance workflow: scan (code/interaction/automation), triage (red-line vs. polish), batched fixes with human confirmation, and regression. Pair with the visual-verify skill for the visual acceptance step. Not for greenfield feature work or non-AI-generated codebases.
+description: >-
+  Use when a site/project was built by AI multi-round iteration (vibe-coded) and
+  needs a systematic audit + remediation — when the user reports things "feel off /
+  不对劲" but can't describe technical details, or wants to harden an AI-generated
+  codebase against its characteristic failure modes (fragmented code, duplicated
+  logic, schema drift, dead code, silent errors, state loss, security vectors).
+  Provides the full governance workflow: scan (code/interaction/automation), triage
+  (red-line vs. polish), batched fixes with human confirmation, and regression. Pair
+  with the visual-verify skill for the visual acceptance step. Not for greenfield
+  feature work or non-AI-generated codebases.
 version: 1.0.0
 user-invocable: true
 argument-hint: "[project path] [scope: full|code|interaction|automation]"
